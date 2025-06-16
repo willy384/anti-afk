@@ -1,5 +1,6 @@
 import pydirectinput
 import time
 import keyboard  # Biblioteca para detectar teclas pressionadas
+import pyautogui
 
-pydirectinput.press('space')  # Simula o pressionamento da tecla espaço
+pyautogui.rightClick(x=500, y=500)
