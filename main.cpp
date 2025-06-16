@@ -10,6 +10,7 @@ int main() {
     std::cout << "Aperte F1 para ativar e F2 para desativar!!" << std::endl;
     while (true) {
         if (GetAsyncKeyState(VK_F1) & 0x8000) {
+            setPause=0;
             while(true){
                 std::cout << "Ativado" << std::endl;
                 auto start = std::chrono::steady_clock::now();// Aguarda 50 segundos sem travar o programa
